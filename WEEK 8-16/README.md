@@ -1,5 +1,8 @@
 # **Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow**
+
 ![image](https://github.com/user-attachments/assets/9a86845b-9f1b-4e18-81ab-1961d5757fa4)
+
+**Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow**
 Concepts, Tools, and Techniques to Build Intelligent Systems
 Welcome to the companion repository for Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, 2nd Edition by Aurélien Géron. This book provides a practical, hands-on approach to mastering machine learning, covering fundamental concepts, essential tools, and advanced techniques for building intelligent systems.
 About the Book
@@ -115,3 +118,4 @@ O’Reilly Media (Nicole Taché, Kristen Brown, and others) for their support.
 Readers for their encouragement and contributions to errata.
 
 Happy learning, and enjoy building intelligent systems with machine learning!
+
