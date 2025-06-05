@@ -3,14 +3,13 @@
 ![image](https://github.com/user-attachments/assets/9a86845b-9f1b-4e18-81ab-1961d5757fa4)
 Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow
 Concepts, Tools, and Techniques to Build Intelligent Systems
-
 Welcome to the companion repository for Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, 2nd Edition by Aurélien Géron. This book provides a practical, hands-on approach to mastering machine learning, covering fundamental concepts, essential tools, and advanced techniques for building intelligent systems.
 About the Book
-This book is designed for readers with little to no prior knowledge of machine learning. It guides you through the essentials of machine learning, from basic algorithms to cutting-edge deep learning techniques. With a focus on practical implementation, the book uses production-ready Python frameworks:
+This book is designed for readers with little to no prior knowledge of machine learning. It guides you through the essentials of machine learning, from basic algorithms to cutting-edge deep learning techniques. With a focus on practical implementation, the book uses production-ready Python frameworks such as:
 
 Scikit-Learn: A user-friendly library for efficient implementation of machine learning algorithms.
 TensorFlow: A powerful library for distributed numerical computation, ideal for large-scale neural networks.
-Keras: A high-level API for building and training neural networks, seamlessly integrated with TensorFlow (via tf.keras).
+Keras: A high-level API for building and training neural networks, with seamless integration into TensorFlow (via tf.keras).
 
 The book is divided into two parts:
 
@@ -24,9 +23,6 @@ Hands-On Approach: Learn through concrete code examples and exercises, available
 Comprehensive Coverage: From simple linear models to advanced deep learning architectures like GANs and Transformers.
 Practical Tools: Leverage Scikit-Learn for traditional ML, TensorFlow and Keras for deep learning, and additional APIs like TF-Agents and TF-Serving.
 Real-World Applications: Build systems for tasks like image classification, NLP, anomaly detection, and reinforcement learning.
-
-Sample Visualization
-Below is an example scatterplot from Chapter 1, showing the relationship between GDP per capita and life satisfaction:
 
 Prerequisites
 To get the most out of this book, you should have:
@@ -44,7 +40,6 @@ Jupyter Notebooks: Interactive code examples and exercises for each chapter, mir
 Datasets: Sample datasets used in the book, such as OECD Better Life Index and IMF GDP per capita data.
 Code Examples: Full implementations of algorithms and models discussed in the book, including Linear Regression, k-Nearest Neighbors, and deep neural networks.
 Solutions to Exercises: Available for select exercises to aid learning.
-Images: Visuals like charts and logos used in this README (stored in the images/ folder).
 
 Getting Started
 
@@ -91,43 +86,6 @@ model.fit(X, y)
 X_new = [[22587]]  # Cyprus's GDP per capita
 print(model.predict(X_new))  # Outputs: [[5.96242338]]
 
-Adding Images to the Repository
-To include the images referenced above:
-
-Obtain Images:
-Book Cover: Download the official cover image from O’Reilly or create a placeholder (hands-on-ml-cover.jpg).
-GDP vs. Life Satisfaction Scatterplot: Generate using the code below and save as images/gdp_life_satisfaction.png.
-Library Logos: Download official logos for Scikit-Learn, TensorFlow, and Keras from their respective websites or GitHub repositories (scikit-learn-logo.png, tensorflow-logo.png, keras-logo.png).
-
-
-Store Images:
-Create an images/ folder in the repository.
-Place the images in this folder.
-
-
-Update Image Paths:
-Ensure the paths in the Markdown (![...](images/...)) match the file names in the images/ folder.
-Alternatively, host images externally (e.g., Imgur or a CDN) and update the URLs.
-
-
-
-Example code to generate the scatterplot:
-import matplotlib.pyplot as plt
-import pandas as pd
-import numpy as np
-
-# Sample data (replace with actual data loading)
-country_stats = pd.DataFrame({
-    "GDP per capita": [12240, 27195, 37675, 50962, 55805],
-    "Life satisfaction": [4.9, 5.8, 6.5, 7.3, 7.2]
-})
-
-# Create scatterplot
-country_stats.plot(kind='scatter', x="GDP per capita", y='Life satisfaction')
-plt.savefig('images/gdp_life_satisfaction.png', dpi=300, bbox_inches='tight')
-plt.show()
-
-Note: Use the prepare_country_stats function and actual datasets from the book’s Jupyter notebooks for the authentic plot. Ensure images are in PNG or JPG format and optimized for size (<500KB).
 Additional Resources
 
 Official Book Website: https://homl.info/oreilly2 for errata, updates, and additional information.
@@ -139,5 +97,23 @@ The Hundred-Page Machine Learning Book by Andriy Burkov.
 Python Machine Learning by Sebastian Raschka.
 
 
-**
+Competitions: Practice on Kaggle for real-world ML challenges.
 
+Contributing
+Found an error or have a suggestion? Please:
+
+File issues on GitHub for code-related problems or questions: https://github.com/ageron/handson-ml2/issues.
+Submit errata for text errors via https://homl.info/oreilly2.
+Share your feedback or success stories via email (bookquestions@oreilly.com) or publicly on Twitter or Amazon reviews.
+
+License
+The code examples are provided under the terms outlined in the book. You may use them in your programs without permission unless reproducing significant portions (e.g., for commercial distribution). For details, contact permissions@oreilly.com.
+Acknowledgments
+Special thanks to:
+
+François Chollet for reviewing Keras and TensorFlow chapters.
+Ankur Patel, Olzhas Akpambetov, and TensorFlow team members for in-depth feedback.
+O’Reilly Media (Nicole Taché, Kristen Brown, and others) for their support.
+Readers for their encouragement and contributions to errata.
+
+Happy learning, and enjoy building intelligent systems with machine learning!
